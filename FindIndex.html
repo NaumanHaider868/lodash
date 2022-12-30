@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <title>findIndex</title>
+        <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
+    </head>
+    <body>
+        <h1>Lodash findIndex,findLastIndex</h1>
+        <p>Find value from array with index number</p>
+
+        <script>
+            var data = [1,2,3,3,4,5,3];
+            console.log(_.findIndex(data,(e)=>{return e === 3},4));
+
+            var array = [1,2,3,3,4,3,5];
+            console.log('Start With Last Index',_.findLastIndex(array,(e)=>{return e === 3}));
+        </script>
+    </body>
+</html>

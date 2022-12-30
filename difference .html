@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>difference</title>
+        <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
+    </head>
+    <body>
+        <h1>Lodash difference</h1>
+        <p>remove value from array</p>
+
+        <script>
+            var data = [1,2,3,3,4,'name',5];
+            var removeData = [3,'name'];
+            console.log(_.difference(data,removeData));
+
+            console.log('differenceBy')
+            var data = [1,2,3,4.2];
+            var removeData = [2,3,3,5];
+            console.log(_.differenceBy(data,removeData,Math.double))
+        </script>
+    </body>
+</html>

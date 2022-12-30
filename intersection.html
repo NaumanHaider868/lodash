@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title>intersection</title>
+        <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
+    </head>
+    <body>
+        <h1>Lodash intersection,intersetionBy</h1>
+        <p>get comman value from array</p>
+
+        <script>
+            var data1 = [1,2,3,'name',0];
+            var data2 = [1,9,0,'data'];
+            console.log('intersection',_.intersection(data1,data2))
+
+            var data1 = [1,2,3,'name',2.9,5,8.9];
+            var data2 = [1,9,0,'data',0.3,8,90,9.88];
+            console.log('intersectionBy',_.intersectionBy(data1,data2,Math.ceil))
+        </script>
+    </body>
+</html>

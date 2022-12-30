@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>sortedIndex</title>
+        <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
+    </head>
+    <body>
+        <h1>Lodash sortedIndex,sortedUniq,take,takeRight</h1>
+        <p>position in array</p>
+
+        <script>
+            var data1 = [1,2,3,'name'];
+            console.log('sortedIndex',_.sortedIndex(data1,9));
+
+            var arr = ([1,1,2,3,3,4,7,6]);
+            console.log('sortedUniq',_.sortedUniq(arr))
+
+            var arr = ([1,1,2,3,3,4,7,6]);
+            console.log('take',_.take(arr,4))
+
+            var arr = ([1,1,2,3,3,4,7,6]);
+            console.log('takeRight',_.takeRight(arr,4))
+        </script>
+    </body>
+</html>

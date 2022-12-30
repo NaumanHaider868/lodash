@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>flatten</title>
+        <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
+    </head>
+    <body>
+        <h1>Lodash flatten,flattenDepth,flattenDeep</h1>
+        <p>flatten array</p>
+
+        <script>
+            var data = [1,2,3,['name',[90],'data'],['yo']];
+            console.log(_.flatten(data));
+
+
+            var data = [1,2,3,['name',[90],'data'],['yo']];
+            console.log('flattenDepth',_.flattenDepth(data));
+
+            var data = [1,2,3,['name',[90,10,'name',[1,[2,4,5,6]]],'data'],['yo']];
+            console.log('flattenDeep',_.flattenDeep(data));
+        </script>
+    </body>
+</html>
